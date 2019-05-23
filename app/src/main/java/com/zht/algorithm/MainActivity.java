@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.daytwo.RemoveDuplicatesTwo;
+import com.zht.algorithm.daytwo.StrStr;
 
 import java.util.HashMap;
 
@@ -54,14 +54,41 @@ public class MainActivity extends AppCompatActivity {
 //        Log.i(TAG,"ValidParentheses.isValidTwo(\"{[]}\") = "+ ValidParentheses.isValidTwo("{[]}"));
 //        Log.i(TAG,"ValidParentheses.isValidTwo(\"(([]){})\") = "+ ValidParentheses.isValidTwo("(([]){})"));
 
-        int[] num1 = new int[]{1,1,1,2,2,3,3,4};
-        printArr(num1, RemoveDuplicatesTwo.removeDuplicates(num1));
-        int[] num2 = new int[]{1,2,3,4};
-        printArr(num2,RemoveDuplicatesTwo.removeDuplicates(num2));
-        int[] num3 = new int[]{0,0,1,1,1,1,2,3,3};
-        printArr(num3,RemoveDuplicatesTwo.removeDuplicates(num3));
-        int[] num4 = new int[]{1,1,1};
-        printArr(num4,RemoveDuplicatesTwo.removeDuplicates(num4));
+//        int[] num1 = new int[]{1,1,1,2,2,3,3,4};
+//        printArr(num1, RemoveDuplicatesTwo.removeDuplicates(num1));
+//        int[] num2 = new int[]{1,2,3,4};
+//        printArr(num2,RemoveDuplicatesTwo.removeDuplicates(num2));
+//        int[] num3 = new int[]{0,0,1,1,1,1,2,3,3};
+//        printArr(num3,RemoveDuplicatesTwo.removeDuplicates(num3));
+//        int[] num4 = new int[]{1,1,1};
+//        printArr(num4,RemoveDuplicatesTwo.removeDuplicates(num4));
+
+//        int[] num1 = new int[]{1,1,1,2,2,3,3,4};
+//        printArr(num1, RemoveElement.removeElement(num1,1));
+//        int[] num2 = new int[]{1,2,3,4};
+//        printArr(num2,RemoveElement.removeElement(num2,2));
+//        int[] num3 = new int[]{0,0,1,1,1,1,2,3,3};
+//        printArr(num3,RemoveElement.removeElement(num3,1));
+//        int[] num4 = new int[]{1,1,1};
+//        printArr(num4,RemoveElement.removeElement(num4,1));
+
+//        printSth(String.valueOf(StrStr.strStr("melody","y")));
+//        printSth(String.valueOf(StrStr.strStr("hello","ll")));
+//        printSth(String.valueOf(StrStr.strStr("hello","12")));
+//        printSth(String.valueOf(StrStr.strStr("hello","")));
+//        printSth(String.valueOf(StrStr.strStr("","")));
+//        printSth(String.valueOf(StrStr.strStr("aaa","a")));
+//        printSth(String.valueOf(StrStr.strStr("",null)));
+//        printSth(String.valueOf(StrStr.strStr(null,null)));
+//        printSth(String.valueOf(StrStr.strStr(null,"")));
+        printSth(String.valueOf(StrStr.strStrTwo("mississippi","issip")));
+        printSth(String.valueOf(StrStr.strStrTwo("mississippi","pi")));
+        printSth(String.valueOf(StrStr.strStrTwo("aaa","a")));
+
+    }
+
+    private void printSth(String msg){
+        Log.i(TAG,"msg = "+msg);
     }
 
     private void printArr(int[] arr,int length){
