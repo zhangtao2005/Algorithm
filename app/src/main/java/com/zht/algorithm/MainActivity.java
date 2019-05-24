@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.daytwo.StrStr;
+import com.zht.algorithm.daythree.PlusOne;
 
 import java.util.HashMap;
 
@@ -81,10 +81,39 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(String.valueOf(StrStr.strStr("",null)));
 //        printSth(String.valueOf(StrStr.strStr(null,null)));
 //        printSth(String.valueOf(StrStr.strStr(null,"")));
-        printSth(String.valueOf(StrStr.strStrTwo("mississippi","issip")));
-        printSth(String.valueOf(StrStr.strStrTwo("mississippi","pi")));
-        printSth(String.valueOf(StrStr.strStrTwo("aaa","a")));
+//        printSth(String.valueOf(StrStr.strStrTwo("mississippi","issip")));
+//        printSth(String.valueOf(StrStr.strStrTwo("mississippi","pi")));
+//        printSth(String.valueOf(StrStr.strStrTwo("aaa","a")));
 
+//        int[] nums = SingleNumThree.singleNumber(new int[]{1,2,1,3,2,5});
+////        printArr(nums,nums.length);
+
+//        printSth(CountAndSay.countAndSay(5));
+
+//        printSth(String.valueOf(MaxSubArrayOne.maxSubArray(new int[]{-2,1,-3,4,-1,2,1,-5,4})));
+
+//        printSth(String.valueOf(LengthOfLastWord.lengthOfLastWord("Hello World")));
+//        printSth(String.valueOf(LengthOfLastWord.lengthOfLastWord("HelloWorld")));
+//        printSth(String.valueOf(LengthOfLastWord.lengthOfLastWord("  HelloWorld   ")));
+//        printSth(String.valueOf(LengthOfLastWord.lengthOfLastWord("  ww w ")));
+//        int[] numArr = PlusOne.plusOne(new int[]{9});
+//        printArr(numArr,numArr.length);
+//        int[] numArrTwo = PlusOne.plusOne(new int[]{9,9});
+//        printArr(numArrTwo,numArrTwo.length);
+//        int[] numArrThree = PlusOne.plusOne(new int[]{1,2});
+//        printArr(numArrThree,numArrThree.length);
+//        int[] numArrFour = PlusOne.plusOne(new int[]{0});
+//        printArr(numArrFour,numArrFour.length);
+
+        int[] numArrSeven = PlusOne.plusOne(new int[]{9,9,9,9,9,9,9,9,9,9});
+        printArr(numArrSeven,numArrSeven.length);
+
+        int[] numArrFive = PlusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
+        printArr(numArrFive,numArrFive.length);
+
+        int[] numArrSix = PlusOne.plusOne(new int[]{
+                7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6});
+        printArr(numArrSix,numArrSix.length);
     }
 
     private void printSth(String msg){
