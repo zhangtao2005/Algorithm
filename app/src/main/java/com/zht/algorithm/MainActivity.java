@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.daythree.PlusOne;
+import com.zht.algorithm.dayfour.ClimbingStairs;
 
 import java.util.HashMap;
 
@@ -105,15 +105,22 @@ public class MainActivity extends AppCompatActivity {
 //        int[] numArrFour = PlusOne.plusOne(new int[]{0});
 //        printArr(numArrFour,numArrFour.length);
 
-        int[] numArrSeven = PlusOne.plusOne(new int[]{9,9,9,9,9,9,9,9,9,9});
-        printArr(numArrSeven,numArrSeven.length);
+//        int[] numArrSeven = PlusOne.plusOne(new int[]{9,9,9,9,9,9,9,9,9,9});
+//        printArr(numArrSeven,numArrSeven.length);
+//
+//        int[] numArrFive = PlusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
+//        printArr(numArrFive,numArrFive.length);
+//
+//        int[] numArrSix = PlusOne.plusOne(new int[]{
+//                7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6});
+//        printArr(numArrSix,numArrSix.length);
 
-        int[] numArrFive = PlusOne.plusOne(new int[]{9,8,7,6,5,4,3,2,1,0});
-        printArr(numArrFive,numArrFive.length);
+//        printSth(AddBinary.addBinaryTwo("11","1"));
+//        printSth(AddBinary.addBinaryTwo("1010","1011"));
+//        printSth(""+ SqrtOf.mySqrtTwo(2147395599));
 
-        int[] numArrSix = PlusOne.plusOne(new int[]{
-                7,2,8,5,0,9,1,2,9,5,3,6,6,7,3,2,8,4,3,7,9,5,7,7,4,7,4,9,4,7,0,1,1,1,7,4,0,0,6});
-        printArr(numArrSix,numArrSix.length);
+        printSth(""+ ClimbingStairs.climbStairsTwo(44));
+        printSth(""+ ClimbingStairs.climbStairsTwo(45));
     }
 
     private void printSth(String msg){
