@@ -4,9 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.dayfour.ClimbingStairs;
+import com.zht.algorithm.daysix.PascalTriangleII;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -119,12 +120,70 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(AddBinary.addBinaryTwo("1010","1011"));
 //        printSth(""+ SqrtOf.mySqrtTwo(2147395599));
 
-        printSth(""+ ClimbingStairs.climbStairsTwo(44));
-        printSth(""+ ClimbingStairs.climbStairsTwo(45));
+//        printSth(""+ ClimbingStairs.climbStairsTwo(44));
+//        printSth(""+ ClimbingStairs.climbStairsTwo(45));
+
+//        printList(PascalTriangle.generate(1));
+//        printList(PascalTriangle.generate(2));
+//        printList(PascalTriangle.generateTwo(5));
+
+        printListOne(PascalTriangleII.getRow(3));
+    }
+
+    private void printListOne(List<Integer> data){
+        StringBuilder builder = new StringBuilder();
+        Log.i(TAG,"data size = "+data.size());
+        for (int j = 0; j < data.size(); j++) {
+            if (j == 0) {
+                builder.append("[" + data.get(0) + ",");
+            } else if (j == data.size() - 1) {
+                builder.append(data.get(data.size() - 1) + "]");
+            } else {
+                builder.append(data.get(j) + ",");
+            }
+            if (data.size() == 1) {
+                builder.deleteCharAt(builder.length() - 1);
+                builder.append("],");
+            }
+        }
+        printSth(builder.toString());
+    }
+    
+    
+
+    private void printList(List<List<Integer>> data){
+        StringBuilder builderOut = new StringBuilder();
+        builderOut.append("[");
+        for (int i = 0; i < data.size(); i++) {
+            List<Integer> line = data.get(i);
+            StringBuilder builder = new StringBuilder();
+            Log.i(TAG,"line size = "+line.size());
+            for (int j = 0; j < line.size(); j++) {
+                if(j == 0){
+                    builder.append("["+line.get(0)+",");
+                }else if(j == line.size() - 1){
+                    builder.append(line.get(line.size() - 1)+"]");
+                }else{
+                    builder.append(line.get(j)+",");
+                }
+                if(line.size() == 1){
+                    builder.deleteCharAt(builder.length()-1);
+                    builder.append("],");
+                }
+            }
+            if(i > 0 && i < data.size() - 1) {
+                builderOut.append(builder.toString() + ",");
+            }else{
+                builderOut.append(builder.toString());
+            }
+        }
+        builderOut.append("]");
+        printSth(builderOut.toString());
     }
 
     private void printSth(String msg){
         Log.i(TAG,"msg = "+msg);
+        Log.i(TAG,"------------line-------------");
     }
 
     private void printArr(int[] arr,int length){
