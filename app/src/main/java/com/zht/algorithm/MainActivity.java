@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.daysix.PascalTriangleII;
+import com.zht.algorithm.dayseven.SingleNumber;
 
 import java.util.HashMap;
 import java.util.List;
@@ -127,7 +127,19 @@ public class MainActivity extends AppCompatActivity {
 //        printList(PascalTriangle.generate(2));
 //        printList(PascalTriangle.generateTwo(5));
 
-        printListOne(PascalTriangleII.getRow(3));
+//        printListOne(PascalTriangleII.getRow(3));
+
+//        printSth(""+ SellStockII.maxProfitTwo(new int[]{7,1,5,3,6,4}));
+//        printSth(""+ SellStockII.maxProfitTwo(new int[]{1,2,3,4,5}));
+//        printSth(""+ SellStockII.maxProfitTwo(new int[]{7,6,4,3,1}));
+//        printSth(""+SellStockI.maxProfit(new int[]{7,6,4,3,1}));
+
+//        printSth(ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+//        printSth(ValidPalindrome.isPalindrome("race a car"));
+//        printSth(ValidPalindrome.isPalindrome("race e car"));
+
+        printSth(SingleNumber.singleNumber(new int[]{2,2,1}));
+        printSth(SingleNumber.singleNumber(new int[]{4,1,2,1,2}));
     }
 
     private void printListOne(List<Integer> data){
@@ -181,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
         printSth(builderOut.toString());
     }
 
-    private void printSth(String msg){
+    private void printSth(Object msg){
         Log.i(TAG,"msg = "+msg);
         Log.i(TAG,"------------line-------------");
     }
