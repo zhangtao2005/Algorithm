@@ -23,7 +23,7 @@ public class LinkedListCycle {
         while (next != null){
             if(nextOfNext == null)
                 return false;
-            if(next.val == nextOfNext.val){
+            if(next == nextOfNext){
                 return true;
             }
             if (nextOfNext != null && nextOfNext.next != null){
