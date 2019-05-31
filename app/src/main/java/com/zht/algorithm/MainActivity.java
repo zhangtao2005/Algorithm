@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.dayseven.SingleNumber;
+import com.zht.algorithm.dayeight.ExcelColumnTitle;
 
 import java.util.HashMap;
 import java.util.List;
@@ -138,8 +138,16 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(ValidPalindrome.isPalindrome("race a car"));
 //        printSth(ValidPalindrome.isPalindrome("race e car"));
 
-        printSth(SingleNumber.singleNumber(new int[]{2,2,1}));
-        printSth(SingleNumber.singleNumber(new int[]{4,1,2,1,2}));
+//        printSth(SingleNumber.singleNumber(new int[]{2,2,1}));
+//        printSth(SingleNumber.singleNumber(new int[]{4,1,2,1,2}));
+
+//        printArr(TwoSum.twoSum(new int[]{2,7,11,15},9),2);
+//        printSth(ExcelColumnTitle.convertToTitle(1));
+//        printSth(ExcelColumnTitle.convertToTitle(27));
+//        printSth(ExcelColumnTitle.convertToTitle(701));
+        printSth(ExcelColumnTitle.convertToTitle(702));
+        printSth(ExcelColumnTitle.convertToTitle(18278));
+//        printSth(ExcelColumnTitle.convertToTitle(65536));
     }
 
     private void printListOne(List<Integer> data){
