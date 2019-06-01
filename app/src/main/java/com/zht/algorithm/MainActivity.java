@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.dayeight.ExcelColumnTitle;
+import com.zht.algorithm.daynine.RotateArray;
 
 import java.util.HashMap;
 import java.util.List;
@@ -145,9 +145,27 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(ExcelColumnTitle.convertToTitle(1));
 //        printSth(ExcelColumnTitle.convertToTitle(27));
 //        printSth(ExcelColumnTitle.convertToTitle(701));
-        printSth(ExcelColumnTitle.convertToTitle(702));
-        printSth(ExcelColumnTitle.convertToTitle(18278));
+//        printSth(ExcelColumnTitle.convertToTitle(702));
+//        printSth(ExcelColumnTitle.convertToTitle(18278));
 //        printSth(ExcelColumnTitle.convertToTitle(65536));
+
+//        printSth(ExcelTitleToNumber.titleToNumber("Z"));
+//        printSth(ExcelTitleToNumber.titleToNumber("AA"));
+//        printSth(ExcelTitleToNumber.titleToNumber("ZZ"));
+//        printSth(ExcelTitleToNumber.titleToNumber("ZZZ"));
+//        printSth(ExcelTitleToNumber.titleToNumber("CRXP"));
+
+//        printSth(TrailingZeros.trailingZeroes(5));
+//        printSth(TrailingZeros.trailingZeroes(10));
+//        printSth(TrailingZeros.trailingZeroes(1808548329));
+
+
+        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},3);
+//        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},7);
+//        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},0);
+//        RotateArray.rotate(new int[]{1},0);
+//        RotateArray.rotate(new int[]{1,2},1);
+
     }
 
     private void printListOne(List<Integer> data){
