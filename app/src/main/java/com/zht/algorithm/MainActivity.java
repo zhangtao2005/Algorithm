@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.daynine.RotateArray;
+import com.zht.algorithm.dayten.HouseRobber;
 
 import java.util.HashMap;
 import java.util.List;
@@ -160,12 +160,38 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(TrailingZeros.trailingZeroes(1808548329));
 
 
-        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},3);
+//        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},3);
 //        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},7);
 //        RotateArray.rotate(new int[]{1,2,3,4,5,6,7},0);
 //        RotateArray.rotate(new int[]{1},0);
 //        RotateArray.rotate(new int[]{1,2},1);
 
+//        printSth(ReverseBits.reverseBits(43261596));
+//        printSth(ReverseBits.reverseBits(-3));
+//
+//        printSth(ReverseBits.reverseBitsTwo(43261596));
+//        printSth(ReverseBits.reverseBitsTwo(-3));
+
+//        printSth(HammingWeight.hammingWeight(3));
+//        printSth(HammingWeight.hammingWeight(19992345));
+
+        printSth(HouseRobber.rob(new int[]{1,2,3,1}));
+        printSth(HouseRobber.rob(new int[]{2,7,9,3,1}));
+        printSth(HouseRobber.rob(new int[]{2,1,1,2}));
+    }
+
+    private void printChArr(char[] chArr){
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < chArr.length; i++) {
+            if (i == 0){
+                builder.append("["+chArr[i]+",");
+            }else if (i == chArr.length - 1){
+                builder.append(chArr[i]+"]");
+            }else{
+                builder.append(chArr[i]+",");
+            }
+        }
+        Log.i(TAG,"binary String is "+builder.toString());
     }
 
     private void printListOne(List<Integer> data){
