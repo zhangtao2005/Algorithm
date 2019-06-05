@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.dayten.HouseRobber;
+import com.zht.algorithm.dayeleven.CountPrimes;
 
 import java.util.HashMap;
 import java.util.List;
@@ -175,9 +175,17 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(HammingWeight.hammingWeight(3));
 //        printSth(HammingWeight.hammingWeight(19992345));
 
-        printSth(HouseRobber.rob(new int[]{1,2,3,1}));
-        printSth(HouseRobber.rob(new int[]{2,7,9,3,1}));
-        printSth(HouseRobber.rob(new int[]{2,1,1,2}));
+//        printSth(HouseRobber.rob(new int[]{1,2,3,1}));
+//        printSth(HouseRobber.rob(new int[]{2,7,9,3,1}));
+//        printSth(HouseRobber.rob(new int[]{2,1,1,2}));
+
+//        printSth(HappyNumber.isHappy(19));
+//        printSth(HappyNumber.isHappy(29));
+//        printSth(HappyNumber.isHappy(77));
+
+        printSth(CountPrimes.countPrimes(5));
+        printSth(CountPrimes.countPrimes(10));
+        printSth(CountPrimes.countPrimes(20));
     }
 
     private void printChArr(char[] chArr){
