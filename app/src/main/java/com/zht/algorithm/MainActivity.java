@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.zht.algorithm.dayeleven.CountPrimes;
-
 import java.util.HashMap;
 import java.util.List;
 
@@ -183,9 +181,17 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(HappyNumber.isHappy(29));
 //        printSth(HappyNumber.isHappy(77));
 
-        printSth(CountPrimes.countPrimes(5));
-        printSth(CountPrimes.countPrimes(10));
-        printSth(CountPrimes.countPrimes(20));
+//        printSth(CountPrimes.countPrimes(5));
+//        printSth(CountPrimes.countPrimes(10));
+//        printSth(CountPrimes.countPrimes(20));
+
+//        printSth(LongestSubstring.lengthOfLongestSubstring("dvdf"));
+//        printSth(LongestSubstring.lengthOfLongestSubstring("bbbbb"));
+//        printSth(LongestSubstring.lengthOfLongestSubstring("abcd"));
+//        printSth(LongestSubstring.lengthOfLongestSubstring("aab"));
+//        printSth(LongestPalindromicSubstring.longestPalindrome("babad"));
+//        printSth(LongestPalindromicSubstring.longestPalindrome("aab"));
+//        printSth(LongestPalindromicSubstring.longestPalindrome("cbbd"));
     }
 
     private void printChArr(char[] chArr){
