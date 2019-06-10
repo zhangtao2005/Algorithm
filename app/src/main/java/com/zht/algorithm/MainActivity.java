@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import com.zht.algorithm.daythirteen.ThreeSumClosest;
+
 import java.util.HashMap;
 import java.util.List;
 
@@ -192,6 +194,34 @@ public class MainActivity extends AppCompatActivity {
 //        printSth(LongestPalindromicSubstring.longestPalindrome("babad"));
 //        printSth(LongestPalindromicSubstring.longestPalindrome("aab"));
 //        printSth(LongestPalindromicSubstring.longestPalindrome("cbbd"));
+
+//        printSth(MyAtoi.myAtoi("  -42"));
+//        printSth(MyAtoi.myAtoi("  00000000214748380"));
+//        printSth(MyAtoi.myAtoi("  0-1"));
+//        printSth(MyAtoi.myAtoi("-9223372036854775809"));
+//        printSth(MyAtoi.myAtoi("   -42"));
+//        printSth(MyAtoi.myAtoi("4193 with words"));
+//        printSth(MyAtoi.myAtoi("4193with words"));
+//        printSth(MyAtoi.myAtoi("41with93 words"));
+//        printSth(MyAtoi.myAtoi("words and 987"));
+//        printSth(MyAtoi.myAtoi("-91283472332"));
+
+//        printSth(MostWater.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
+//        printSth(IntToRoman.intToRoman(3999));
+//        printSth(IntToRoman.intToRoman(3999));
+//        printSth(IntToRoman.intToRoman(1000));
+//        printSth(IntToRoman.intToRoman(1010));
+//        printSth(IntToRoman.intToRoman(1100));
+//        printSth(IntToRoman.intToRoman(411));
+//        printSth(IntToRoman.intToRoman(511));
+//        printSth(IntToRoman.intToRoman(611));
+//        printSth(IntToRoman.intToRoman(911));
+//        printSth(IntToRoman.intToRoman(49));
+//        printSth(IntToRoman.intToRoman(19));
+//        printSth(IntToRoman.intToRoman(299));
+//        printSth(IntToRoman.intToRoman(2999));
+
+        printSth(ThreeSumClosest.threeSumClosest(new int[]{0,1,2},0));
     }
 
     private void printChArr(char[] chArr){
